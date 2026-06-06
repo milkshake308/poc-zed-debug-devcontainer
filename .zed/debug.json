@@ -1,0 +1,31 @@
+[
+  {
+    "label": "Launch main.py",
+    "adapter": "Debugpy",
+    "tcp_connection": {
+      "timeout": 10000
+    },
+    "request": "launch",
+    "console": "internalConsole",
+    "program": "main.py"
+  },
+  {
+    "label": "Launch main.go",
+    "adapter": "Delve",
+    "request": "launch",
+    "mode": "debug",
+    "console": "internalConsole",
+    "program": "main.go"
+  },
+  {
+    "label": "Launch main.js",
+    "adapter": "JavaScript",
+    "tcp_connection": {
+      "timeout": 10000
+    },
+    "request": "launch",
+    "type": "node",
+    "console": "internalConsole",
+    "program": "main.js"
+  }
+]

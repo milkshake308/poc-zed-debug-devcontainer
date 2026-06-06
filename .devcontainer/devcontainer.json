@@ -1,0 +1,11 @@
+{
+  "name": "zed-poc-container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/ubuntu/app,type=bind",
+  "workspaceFolder": "/home/ubuntu/app",
+  "updateRemoteUserUID": true,
+  "remoteUser": "ubuntu",
+  "privileged": true
+}
